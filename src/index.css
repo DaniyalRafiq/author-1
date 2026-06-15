@@ -1,0 +1,320 @@
+/* ==========================================================================
+   1. LOCAL FONTS LOADING (@font-face)
+   ========================================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
+/* ---------- AFACAD LOCAL FILES ---------- */
+@font-face {
+  font-family: AfacadRegular;
+  src: url("./assets/fonts/Afacad/Afacad-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: AfacadItalic;
+  src: url("./assets/fonts/Afacad/Afacad-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: AfacadMedium;
+  src: url("./assets/fonts/Afacad/Afacad-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: AfacadMediumItalic;
+  src: url("./assets/fonts/Afacad/Afacad-MediumItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: AfacadSemiBold;
+  src: url("./assets/fonts/Afacad/Afacad-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: AfacadSemiBoldItalic;
+  src: url("./assets/fonts/Afacad/Afacad-SemiBoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: AfacadBold;
+  src: url("./assets/fonts/Afacad/Afacad-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: AfacadBoldItalic;
+  src: url("./assets/fonts/Afacad/Afacad-BoldItalic.ttf") format("truetype");
+}
+
+/* ---------- AELITA LOCAL FILES ---------- */
+
+@font-face {
+  font-family: AelitaBook;
+  src: url("./assets/fonts/Aelita/Aelita-Book.ttf") format("truetype");
+}
+@font-face {
+  font-family: AelitaBookItalic;
+  src: url("./assets/fonts/Aelita/Aelita-BookItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: AelitaMedium;
+  src: url("./assets/fonts/Aelita/Aelita-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: AelitaMediumItalic;
+  src: url("./assets/fonts/Aelita/Aelita-MediumItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: AelitaBold;
+  src: url("./assets/fonts/Aelita/Aelita-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: AelitaBoldItalic;
+  src: url("./assets/fonts/Aelita/Aelita-BoldItalic.ttf") format("truetype");
+}
+/* ==========================================================================
+   2. ROOT DESIGN VARIABLES
+   ========================================================================== */
+:root {
+  /* Color Palettes */
+  --primary: #6a1a2a;
+  --secondary: #d4aa00;
+  --bg-dark: #121212;
+  --text-main: #f5f5f7;
+  --text-mute: #f5f5f7c2;
+
+  /* AFACAD VARIABLES (Body Text) */
+  --font-400: AfacadRegular, sans-serif;
+  --font-500: AfacadMedium, sans-serif;
+  --font-600: AfacadSemiBold, sans-serif;
+  --font-700: AfacadBold, sans-serif;
+
+  --font-400-italic: AfacadItalic, sans-serif;
+  --font-500-italic: AfacadMediumItalic, sans-serif;
+  --font-600-italic: AfacadSemiBoldItalic, sans-serif;
+  --font-700-italic: AfacadBoldItalic, sans-serif;
+  /* AELITA VARIABLES (Luxury Headings) */
+  --font-aelita-400: AelitaBook, serif;
+  --font-aelita-500: AelitaMedium, serif;
+  --font-aelita-700: AelitaBold, serif;
+
+  --font-aelita-400-italic: AelitaBookItalic, serif;
+  --font-aelita-500-italic: AelitaMediumItalic, serif;
+  --font-aelita-700-italic: AelitaBoldItalic, serif;
+}
+
+/* ==========================================================================
+   3. GLOBAL BASE RESET
+   ========================================================================== */
+body {
+  margin: 0;
+  color: var(--text-light);
+
+  /* Website baseline text uses your local Afacad Regular */
+  font-family: var(--font-400);
+}
+
+h1 {
+  /* Headings now perfectly switch over to your custom local Aelita Bold */
+  color: var(--primary);
+  font-family: var(--font-aelita-700);
+  margin-bottom: 15px;
+}
+
+html,
+body {
+  font-family: var(--font-400);
+  background: #e8e8e8;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s ease 0s;
+  color: var(--bs-black);
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+input,
+button,
+textarea {
+  outline: none;
+  border: 0px;
+  background: none;
+}
+section{
+  padding: 50px 0;
+}
+
+.webkit {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+}
+
+.webkit_1 {
+  -webkit-line-clamp: 1;
+}
+
+.webkit_2 {
+  -webkit-line-clamp: 2;
+}
+
+.webkit_3 {
+  -webkit-line-clamp: 3;
+}
+
+.webkit_4 {
+  -webkit-line-clamp: 4;
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  /* display: flex !important; */
+}
+
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+.img-box {
+  margin: 0px;
+}
+
+.img-box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.img-box-content img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  transition: 0.3s;
+}
+
+li.nav-item.dropdown.navdesktop ul {
+  flex-direction: column;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  gap: 7px;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  /* background: #fff; */
+  font-family: var(--font-400);
+  line-height: 1.5;
+  color: #6a7382;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 15px;
+  color: #000001;
+  margin-top: 0;
+  line-height: 1.5;
+}
+
+p {
+  margin-bottom: 15px;
+  color: #000000c2;
+  font-size: 16px;
+}
+
+/* btn */
+
+.btn-theme {
+  border: 2px solid var(--secondary);
+  font-family: var(--font-600);
+  font-size: 17px;
+  padding: 10px 37px;
+  display: inline-block;
+  font-weight: 500;
+  background: var(--secondary);
+  color: #212121;
+  transition: all ease-in-out 0.3s;
+  font-size: 1rem;
+  color: black;
+}
+
+.btn-theme:hover {
+  border: 2px solid #ffffff;
+  background: transparent;
+  color: #ffffff;
+}
+
+.btn-check:focus + .btn,
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+.btn-primary {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+a.btn.btn-theme.btn-primary:hover {
+  background: transparent;
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+
+.btn-main {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.btn-primary-border {
+  background: transparent;
+  color: var(--primary);
+}
+
+.btn-primary-border:hover {
+  background: var(--primary) !important;
+  color: white !important;
+}
+.btn-white {
+  background: white;
+  color: var(--primary);
+}

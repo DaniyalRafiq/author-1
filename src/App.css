@@ -1,0 +1,1117 @@
+/* Custom Styles */
+.logo {
+  display: block;
+  height: 80px;
+  width: 120px;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-links {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.header-links a {
+  font-size: 19px;
+  font-family: var(--font-600);
+  position: relative;
+  color: var(--text-mute);
+}
+.header-links a.active,
+.header-links a:hover {
+  color: var(--text-main);
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 100;
+}
+
+.header-links a:after {
+  content: "";
+  position: absolute;
+  top: 100.2%;
+  height: 2px;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--secondary);
+  width: 0;
+  transition: 0.3s;
+}
+
+.header-links a:hover:after,
+.header-links a.active:after {
+  width: 100%;
+}
+
+/* hero section */
+.hero-section {
+  background-image: url(/src/assets/images/hero-bg.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding-top: 160px;
+  padding-bottom: 100px;
+}
+.hero-ellipse {
+  position: absolute;
+  top: -390px;
+  left: -420px;
+  height: 990px;
+  scale: 1.3;
+}
+.hero-content {
+  position: relative;
+  z-index: 5;
+  strong {
+    font-family: "Alex Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: var(--secondary);
+  }
+}
+
+.hero-content h1 {
+  font-size: 50px;
+  color: var(--text-main);
+  line-height: 1.2;
+  text-transform: capitalize;
+  span {
+    color: var(--secondary);
+  }
+}
+
+.hero-content p {
+  color: #ffffffad;
+}
+
+.auth-bototm {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.13);
+  opacity: 0.3;
+  font-size: 180px;
+  font-family: "Alex Brush", cursive;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+  text-align: center;
+  line-height: 1;
+}
+.hero-section .row {
+  position: relative;
+}
+
+/* sec-01  */
+
+.sec-01 {
+  background-image: url(/src/assets/images/sec-01-bg.png);
+  background-size: cover;
+  background-position: center;
+  margin-top: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.sec-01-content h2 {
+  color: white;
+  /* font-family: var(--font-600); */
+  font-size: 50px;
+  color: var(--text-main);
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+
+.sec-01-number-main {
+  display: flex;
+  align-items: center;
+  gap: 85px;
+  margin-bottom: 30px;
+}
+
+.sec-01-number:not(:last-child) {
+  padding-right: 85px;
+  border-right: 1px solid #6a1a2a;
+}
+
+.sec-01-number h4 {
+  font-size: 41px;
+  margin: 0;
+  line-height: 1.2;
+  margin-bottom: 6px;
+  color: var(--secondary);
+}
+
+.sec-01-number span {
+  color: white;
+  font-size: 17px;
+  font-family: var(--font-300);
+}
+
+.sec-01-content p {
+  color: #ffffffad;
+}
+
+section.sec-01 .row {
+  align-items: center;
+}
+
+.sec-01 .flower-img {
+  position: absolute;
+  height: 200px;
+  right: -40px;
+  bottom: 50px;
+}
+
+/* Section Base Container */
+.faq-section {
+  background-color: #e6e6e6;
+  padding: 80px 0;
+}
+
+.faq-left-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Typography Rules using your Root Variables */
+.faq-sub-heading {
+  font-family: var(--font-aelita-400-italic);
+  font-size: 2rem;
+  color: var(--primary);
+  line-height: 1;
+  font-family: "Alex Brush", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+
+.faq-main-heading {
+  font-family: var(--font-aelita-500);
+  font-size: 3.5rem;
+  color: #222222;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.faq-description {
+  font-family: var(--font-400);
+  font-size: 1rem;
+  color: #555555;
+  line-height: 1.5;
+  max-width: 360px;
+}
+
+.faq-btn-group {
+  display: flex;
+  gap: 12px;
+  margin-top: 1rem;
+}
+
+/* Accordion Architecture */
+.faq-accordion-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq-item {
+  border-radius: 12px;
+  padding: 20px 24px;
+  background-color: #f0f0f0;
+  color: #121212;
+  cursor: pointer;
+  user-select: none;
+  /* Smooth color shifts for the whole container background */
+  transition:
+    background-color 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Active State Styles */
+.faq-item.active {
+  background-color: var(--primary);
+  color: #ffffff;
+}
+
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question-text {
+  font-size: 1.1rem;
+  margin: 0;
+  flex: 1;
+  padding-right: 20px;
+  font-family: var(--font-500);
+  transition: font-family 0.2s ease;
+}
+
+.faq-item.active .faq-question-text {
+  font-family: var(--font-600);
+  color: #ffffff;
+}
+
+.faq-icon {
+  font-size: 1.6rem;
+  line-height: 1;
+  font-weight: 300;
+}
+
+/* Pure CSS CSS Grid Smooth Slide Down Animation */
+.faq-item .faq-body-wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition:
+    grid-template-rows 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.25s ease;
+}
+
+.faq-item.active .faq-body-wrapper {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+.faq-body-content {
+  overflow: hidden;
+}
+
+.faq-answer-text {
+  font-family: var(--font-400);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+  padding-top: 14px;
+  opacity: 0.85;
+  color: #ffffff;
+}
+
+/* Footer */
+/* ==========================================================================
+   1. Footer Base Setup
+   ========================================================================== */
+.main-footer {
+  position: relative;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  padding: 0 0 30px 0;
+  margin-top: 120px; /* Enhanced space for top overlapping CTA card */
+}
+
+/* ==========================================================================
+   2. Overlapping CTA Banner Block (Fully Responsive Flex)
+   ========================================================================== */
+.footer-cta-card {
+  background-color: var(--primary);
+  border-radius: 20px;
+  padding: 40px 50px;
+  margin-top: -80px;
+  margin-bottom: 70px;
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  transform: translateY(-60px);
+  margin: 0;
+}
+.footer-cta-heading {
+  font-family: var(--font-aelita-500);
+  font-size: 2.2rem;
+  color: #ffffff;
+  line-height: 1.2;
+  margin: 0;
+  max-width: 550px;
+}
+
+/* Custom Input Group Structure */
+.footer-input-group {
+  display: flex;
+  align-items: center;
+  background-color: var(--secondary);
+  border-radius: 8px;
+  padding: 6px;
+  min-width: 320px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.footer-input {
+  background: transparent;
+  border: none;
+  color: #121212;
+  font-family: var(--font-400);
+  padding: 8px 14px;
+  width: 100%;
+  font-size: 0.95rem;
+}
+
+.footer-input::placeholder {
+  color: rgba(18, 18, 18, 0.6);
+}
+
+.footer-input:focus {
+  outline: none;
+}
+
+/* ==========================================================================
+   3. Core Grid Columns & Typography
+   ========================================================================== */
+.footer-brand-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footer-logo-img {
+  max-width: 180px;
+  height: auto;
+}
+
+.footer-brand-desc {
+  font-family: var(--font-400);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-mute);
+  margin: 0;
+  max-width: 340px;
+}
+
+/* Social Icon Blocks */
+.footer-social-wrap {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-social-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--secondary);
+  color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: opacity 0.2s ease;
+}
+
+.footer-social-circle:hover {
+  opacity: 0.9;
+  color: #121212;
+}
+
+/* Column Link Directories */
+.footer-column-title {
+  font-family: var(--font-600);
+  font-size: 1.15rem;
+  color: #ffffff;
+  margin-bottom: 1.8rem;
+  position: relative;
+  display: inline-block;
+}
+
+.footer-column-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 60%;
+  height: 2px;
+  background-color: var(--secondary);
+}
+
+.footer-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer-link-item {
+  font-family: var(--font-400);
+  color: var(--text-mute);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.footer-link-item:hover {
+  color: var(--secondary);
+}
+
+/* Contact Rows */
+.footer-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-contact-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-400);
+  color: var(--text-mute);
+  font-size: 0.95rem;
+}
+
+.footer-contact-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--secondary);
+  color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+/* Absolute Positioned Decorative Corner Asset */
+.footer-decorative-flower {
+  position: absolute;
+  bottom: 90px;
+  right: 0px;
+  max-width: 130px;
+  height: auto;
+  pointer-events: none;
+  z-index: 1;
+}
+/* Dividers & Bottom Copyright Strip */
+.footer-divider {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin: 50px 0 20px 0;
+}
+
+.footer-copyright {
+  font-family: var(--font-400);
+  font-size: 0.85rem;
+  color: var(--text-mute);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  text-align: center;
+}
+
+.footer-copyright i {
+  color: var(--secondary);
+}
+
+/* ==========================================================================
+   1. Section Structural Layout Contexts
+   ========================================================================== */
+.testimonials-section {
+  position: relative;
+  background-color: #e6e6e6; /* Section backplate canvas matching layouts */
+  overflow: hidden;
+}
+
+/* Decorative Leaf Graphic Layout */
+.testimonials-decor-left {
+  position: absolute;
+  top: 15%;
+  left: -20px;
+  width: 140px;
+  height: 220px;
+  background-image: url("../assets/images/flower.png"); /* Re-uses your flower graphic */
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+/* ==========================================================================
+   2. Typography Layout Settings
+   ========================================================================== */
+.testimonials-header {
+  margin-bottom: 20px;
+}
+
+.testimonials-sub {
+  font-family: var(--font-aelita-400-italic);
+  font-size: 2rem;
+  color: var(--primary);
+  display: block;
+  line-height: 1;
+  font-family: "Alex Brush", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+
+.testimonials-title {
+  font-family: var(--font-aelita-500);
+  font-size: 3.5rem;
+  color: #222222;
+}
+
+.testimonials-lead {
+  font-family: var(--font-400);
+  font-size: 0.95rem;
+  color: #666666;
+  line-height: 1.6;
+  max-width: 680px;
+}
+
+/* ==========================================================================
+   3. Swiper Slide Card Engine Styling
+   ========================================================================== */
+.swiper-slider-wrapper {
+  position: relative;
+  padding: 20px 0;
+}
+
+.testimonials-swiper {
+  padding: 40px 0 !important;
+  overflow: visible !important; /* Ensures smooth side panel overflow clipping */
+}
+
+/* Standard Base (Inactive / Low Opacity Side Cards) */
+.testimonials-swiper .swiper-slide {
+  opacity: 0.35;
+  transform: scale(0.9);
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease;
+}
+
+.testimonials-swiper .swiper-slide .testimonial-card-inner {
+  background-color: #f0f0f0; /* Soft secondary grey for background cards */
+  color: #555555;
+  border-radius: 16px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+  min-height: 280px;
+  transition:
+    background-color 0.4s ease,
+    color 0.4s ease;
+}
+
+.testimonials-swiper .swiper-slide .testimonial-quote-icon {
+  font-size: 2.5rem;
+  color: rgba(0, 0, 0, 0.05);
+  position: absolute;
+  top: -120px;
+  right: 25px;
+}
+
+.testimonials-swiper .swiper-slide .testimonial-quote-text {
+  font-family: var(--font-400);
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+  color: white;
+}
+.testimonials-swiper .swiper-slide .testimonial-client-name {
+  font-family: var(--font-600);
+  font-size: 1rem;
+  color: #121212;
+  letter-spacing: 0.5px;
+  margin: 15px 0 2px 0;
+}
+
+.testimonials-swiper .swiper-slide .testimonial-client-role {
+  font-family: var(--font-400);
+  font-size: 0.85rem;
+  color: #888888;
+}
+
+/* Image framing structures */
+.testimonial-img-box {
+  flex: 0 0 40%;
+  width: 40%;
+  height: 370px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.testimonial-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%); /* Keeps side profiles styled down */
+  transition: filter 0.4s ease;
+}
+
+.testimonial-body-box {
+  flex: 0 0 60%;
+  position: relative;
+}
+
+/* ==========================================================================
+   4. ACTIVE Slide Focus Styling Rules (Exact Image Match)
+   ========================================================================== */
+.testimonials-swiper .swiper-slide-active {
+  opacity: 1 !important;
+  transform: scale(1.03) !important;
+  z-index: 10;
+}
+
+.testimonials-swiper .swiper-slide-active .testimonial-card-inner {
+  background-color: var(
+    --primary
+  ) !important; /* Active deep wine background styling */
+  color: var(--text-main) !important;
+}
+
+.testimonials-swiper .swiper-slide-active .testimonial-img-box img {
+  filter: grayscale(0%) !important; /* Normal full profile color */
+}
+
+.testimonials-swiper .swiper-slide-active .testimonial-quote-icon {
+  color: #6b232a;
+}
+
+.testimonials-swiper .swiper-slide-active .testimonial-client-name {
+  color: var(
+    --secondary
+  ) !important; /* High gold contrast focus highlight color */
+}
+
+.testimonials-swiper .swiper-slide-active .testimonial-client-role {
+  color: var(--text-mute) !important;
+}
+
+/* ==========================================================================
+   5. Interactive Custom Thumbs Navigation Grid Control
+   ========================================================================== */
+.testimonials-navigation-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.nav-arrow {
+  background: transparent;
+  border: none;
+  color: var(--primary);
+  font-size: 1.4rem;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.nav-arrow:hover {
+  transform: scale(1.2);
+}
+
+.testimonials-thumbs-indicator {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-avatar-thumb {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.nav-avatar-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Highlight matching profile bullet indicator under active card indexing rules */
+.testimonials-swiper + .testimonials-navigation-row .nav-avatar-thumb:hover {
+  transform: scale(1.1);
+  border-color: var(--secondary);
+}
+
+.nav-avatar-thumb.active-thumb {
+  border-color: var(--secondary) !important;
+  transform: scale(1.45);
+}
+
+/* Container Background Wrapper matching the surrounding tone in image_76b908.png */
+.academic-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+/* White Form Card Layout Geometry */
+.academic-card {
+  background-color: #ffffff;
+  border-radius: 32px;
+  width: 100%;
+  max-width: 520px;
+  padding: 40px 35px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Header Top Badge Pill Element */
+.academic-badge-wrapper {
+  margin-bottom: 25px;
+}
+
+.academic-pill-badge {
+  background-color: var(--primary);
+  color: var(--text-main);
+  font-family: var(--font-aelita-500);
+  padding: 12px 30px;
+  border-radius: 12px;
+  display: inline-block;
+  font-size: 1.15rem;
+  letter-spacing: 0.3px;
+}
+
+/* Form Input Blocks and Labels Structure */
+.form-group-block {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.academic-label {
+  color: #2b373a;
+  font-family: var(--font-500);
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.academic-input {
+  border: 1.5px solid #b9c4c7;
+  border-radius: 12px;
+  padding: 11px 18px;
+  font-family: var(--font-400);
+  font-size: 0.9rem;
+  color: #121212;
+  background-color: #ffffff;
+  transition: all 0.25s ease-in-out;
+  outline: none;
+}
+
+.academic-input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(106, 26, 42, 0.1);
+}
+
+/* Invalid Input Style Override */
+.academic-input.input-invalid {
+  border-color: #dc3545;
+  background-color: #fffdfd;
+}
+
+.error-text-msg {
+  color: #dc3545;
+  font-family: var(--font-400);
+  font-size: 0.9rem;
+  margin-top: 5px;
+  text-align: left;
+}
+
+/* Form Core Button Component Rules - Maps explicitly to btn btn-theme setup */
+.btn.btn-theme.academic-submit-btn {
+  background-color: var(--secondary);
+  color: #121212;
+  border: none;
+  font-family: var(--font-600);
+  font-size: 1.25rem;
+  padding: 16px 20px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition:
+    transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    background-color 0.2s ease;
+}
+
+.btn.btn-theme.academic-submit-btn:hover {
+  background-color: #be9900; /* Subtle deeper custom secondary shade on hover actions */
+  transform: translateY(-1px);
+}
+
+.btn.btn-theme.academic-submit-btn:active {
+  transform: translateY(1px);
+}
+
+/* Security Trust Indicator Area Rules */
+.academic-form-footer {
+  margin-top: 25px;
+  color: #556063;
+  font-family: var(--font-400);
+}
+
+.security-notice-text {
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-family: var(--font-500);
+}
+
+.security-icon {
+  font-size: 1.1rem;
+}
+
+.trust-badges-row {
+  font-size: 0.85rem;
+  color: #748285;
+  gap: 8px;
+}
+
+.badge-icon {
+  margin-right: 3px;
+}
+
+.badge-divider {
+  color: #d1d9db;
+}
+
+/* Container that fills standard screen real estate safely without covering up the footer */
+.hero-section.notfound-hero {
+  padding: 180px 0;
+  min-height: calc(
+    100vh - 350px
+  ); /* Ensures full-screen view while letting the footer flow below */
+  background-color: var(--bg-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* Centralized content block wrapping layout definitions */
+.notfound-center-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  width: 100%;
+}
+
+/* Ultra-clean Luxury Title Configuration */
+.notfound-title {
+  font-family: var(--font-aelita-500);
+  color: var(--text-main);
+  font-size: 3.5rem;
+  line-height: 1.2;
+  margin-bottom: 35px;
+  letter-spacing: -0.5px;
+}
+
+/* Action button wrapping correction adjustments */
+.notfound-action-wrapper div {
+  display: inline-block;
+}
+
+.btn.btn-theme.notfound-btn {
+  background-color: var(--primary);
+  color: var(--text-main);
+  font-family: var(--font-600);
+  font-size: 1.1rem;
+  padding: 16px 45px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.btn.btn-theme.notfound-btn:hover {
+  background-color: var(--secondary);
+  color: #121212;
+  border-color: var(--secondary);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(214, 170, 0, 0.25);
+}
+
+/* Mobile Screen Scaling Adjustments */
+@media (max-width: 768px) {
+  .hero-section.notfound-hero {
+    padding: 140px 0;
+    height: 100vh;
+  }
+  .notfound-title {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+  }
+  .btn.btn-theme.notfound-btn {
+    padding: 14px 35px;
+    font-size: 1rem;
+  }
+}
+
+body:has(.notfound-hero) {
+  overflow: hidden;
+}
+.academic-input.academic-textarea {
+  resize: vertical;
+  min-height: 100px;
+  max-height: 250px;
+  line-height: 1.5;
+}
+
+.close-btn {
+  background: var(--primary);
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 5;
+  border-radius: 50%;
+  color: white;
+}
+
+.modal-body {
+  padding: 0;
+  background: transparent;
+}
+
+.modal-content {
+  background: none;
+}
+
+.close-btn {
+  background: var(--primary);
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 5;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3px;
+}
+
+/* Custom styling overrides for the main offcanvas element layout block */
+.offcanvas.custom-author-menu {
+  background-color: #000000; /* Crisp rich black backdrop matching layout */
+  width: 320px;
+  border-left: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Custom Minimal Close Control Position Setup */
+.menu-close-btn {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 1.8rem;
+  line-height: 1;
+  padding: 4px;
+  cursor: pointer;
+  transition:
+    transform 0.25s cubic-bezier(0.25, 1, 0.5, 1),
+    color 0.25s ease;
+}
+
+.menu-close-btn:hover {
+  color: #e5c158; /* Subtle signature gold glow hover look */
+  transform: scale(1.08);
+}
+
+/* NavLink Stack Styling definitions */
+.menu-links-wrapper a {
+  color: #ffffff;
+  font-size: 1.35rem;
+  font-family: var(--font-500, sans-serif);
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  width: max-content;
+  transition: color 0.3s ease;
+}
+
+/* Active Page & Hover Navigation Accent Border Rules */
+.menu-links-wrapper a:hover,
+.menu-links-wrapper a.active {
+  color: #e5c158; /* Signature warm brand gold text color */
+}
+
+.menu-links-wrapper a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #e5c158;
+  transition: width 0.3s ease;
+}
+
+.menu-links-wrapper a.active::after,
+.menu-links-wrapper a:hover::after {
+  width: 32px; /* Small layout underline bar decoration below active links */
+}
+
+/* Customized 'Buy Now' Action Button Theme matching your layout preview */
+.btn.btn-theme.buy-now-menu-btn {
+  background-color: #f7d794; /* Soft warm luxury pastel gold fill matching image */
+  color: #000000 !important;
+  font-family: var(--font-600, sans-serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  border: none;
+  box-shadow: 0 4px 15px rgba(247, 215, 148, 0.15);
+  transition: all 0.3s ease;
+}
+
+.btn.btn-theme.buy-now-menu-btn:hover {
+  background-color: #e5c158;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(229, 193, 88, 0.25);
+}
+.responsive-btn {
+  display: none;
+}
+.menu-btn {
+  background: var(--secondary);
+  height: 40px;
+  width: 40px;
+  color: black;
+  border-radius: 5px;
+  font-size: 21px;
+  padding-top: 5px;
+}
+body:has(.thank-you-hero) header {
+  display: none;
+}
+.thank-you-p{
+  color: white;
+}

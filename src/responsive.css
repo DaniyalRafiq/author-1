@@ -1,0 +1,242 @@
+/* ==========================================================================
+   4. Media Breakpoint Rules (Responsiveness)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Tablet and Small Laptops Viewport Layouts (max-width: 991px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 991px) {
+  /* --- Footer Component Responsive Fixes --- */
+  .header-links {
+    display: none;
+  }
+  .header-btn:not(.responsive-btn) {
+    display: none;
+  }
+  .responsive-btn {
+    display: block;
+  }
+  .footer-cta-card {
+    padding: 30px;
+    margin-top: -60px;
+    margin-bottom: 50px;
+  }
+
+  .footer-cta-heading {
+    font-size: 1.8rem;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .footer-input-group {
+    max-width: 100%; /* Spans full horizontal bounds if stacked */
+  }
+
+  .footer-brand-desc {
+    max-width: 100%;
+  }
+
+  .footer-column-title {
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .footer-decorative-flower {
+    max-width: 100px; /* Resize asset bounds slightly */
+    opacity: 0.4; /* Reduces contrast layer complexity on smaller text boundaries */
+  }
+
+  /* --- Testimonials Component Responsive Fixes --- */
+  .testimonials-title {
+    font-size: 2.8rem;
+  }
+
+  .testimonial-card-inner {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 24px !important;
+  }
+
+  .testimonial-img-box {
+    width: 100% !important;
+    flex: 0 0 100% !important;
+    height: 200px !important;
+  }
+
+  .testimonial-body-box {
+    width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+
+  .testimonials-decor-left {
+    display: none;
+  }
+  .hero-content {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .auth-bototm {
+    font-size: 90px;
+  }
+
+  section.hero-section .img-box-content {
+    height: 390px;
+  }
+
+  .hero-section .row {
+    flex-direction: column-reverse;
+  }
+
+  .sec-01-content {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .sec-01 .row {
+    flex-direction: column-reverse;
+  }
+
+  .sec-01-img {
+    height: 370px;
+  }
+  .testimonial-img-box {
+    height: 260px !important;
+    flex: 0 0 50% !important;
+  }
+
+  .testimonial-img-box img {
+    height: 340px;
+    object-position: top;
+  }
+
+  .f {
+  }
+
+  .faq-main-heading {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .faq-sub-heading {
+    text-align: center;
+  }
+
+  .faq-left-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-cta-card {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-brand-column {
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-section {
+    overflow: hidden;
+  }
+  .sec-01 .flower-img {
+    height: 120px;
+    opacity: 0.3 !important;
+  }
+
+  .sec-01-number-main {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sec-01-number:not(:last-child) {
+    padding: 0;
+    border: 0;
+  }
+  .hero-section:has(.academic-form-container) {
+  }
+
+  .hero-section:has(.academic-form-container) .row {
+    flex-direction: column;
+  }
+  .hero-section .img-box-content:has(.academic-form-container) {
+    height: auto !important;
+  }
+  .academic-form-container {
+    align-items: center;
+  }
+
+  .testimonials-swiper .swiper-slide-active .testimonial-quote-icon {
+    top: -60px;
+    right: -15px;
+    font-size: 6.5rem;
+    z-index: 1;
+  }
+
+  .testimonials-swiper .swiper-slide .testimonial-quote-text {
+    z-index: 3;
+    position: relative;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Mobile Screens Viewport Layouts (max-width: 576px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 576px) {
+  /* --- Footer Component Responsive Fixes --- */
+  .main-footer {
+    margin-top: 80px;
+  }
+
+  .footer-cta-card {
+    padding: 24px 20px;
+    border-radius: 14px;
+    gap: 16px;
+  }
+
+  .footer-cta-heading {
+    font-size: 1.4rem;
+  }
+
+  .footer-input-group {
+    min-width: 100%;
+  }
+
+  .footer-logo-img {
+    max-width: 150px;
+  }
+
+  .footer-divider {
+    margin: 35px 0 20px 0;
+  }
+
+  .footer-copyright {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+
+  /* Disables the corner visual overlay block entirely on tiny screens to optimize content space */
+  .footer-decorative-flower {
+    display: none;
+  }
+
+  /* --- Testimonials Component Responsive Fixes --- */
+  .testimonials-title {
+    font-size: 2.2rem;
+  }
+
+  .testimonials-thumbs-indicator {
+    display: none; /* Auto hides dense avatar thumbnails array to clear tracking interface */
+  }
+}
