@@ -115,7 +115,7 @@ const AcademicForm = ({ closeModal }) => {
       <div className="academic-card">
         <div className="academic-badge-wrapper text-center">
           <span className="academic-pill-badge">
-         Up to 50% Off
+        Contact Us
           </span>
         </div>
 
