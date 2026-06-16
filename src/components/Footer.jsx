@@ -19,26 +19,24 @@ const Footer = () => {
       }}
     >
       <Container>
-        {/* Top Floating CTA Newsletter Box */}
         <div className="footer-cta-card">
           <h2 className="footer-cta-heading">
-            Lorem Ipsum Dolor Sit Amet, <br /> Consectetur Adipiscing Elit. Sed
+            Stay Updated with My Latest Releases  and Exclusive Literary Insights.
           </h2>
           <div className="footer-input-group">
             <input
               type="email"
-              placeholder="Lorem ipsum"
+              placeholder="Enter your email address"
               className="footer-input"
               aria-label="Email subscription input"
             />
-            <Btn className={"btn btn-theme btn-white"} text={"Subscribe "} />
+            <Btn className={"btn btn-theme btn-white"} text={"Subscribe"} />
           </div>
         </div>
 
-        {/* Center Main Directory Content Grid */}
         <Row
           className="gy-5 align-items-start position-relative"
-          style={{ zIndex: 2 }}
+          style={{ zIndex: 2 }} 
         >
           {/* Col 1: Brand Info, Desc & Social Links */}
           <Col md={12} lg={5}>
@@ -49,35 +47,42 @@ const Footer = () => {
                 className="footer-logo-img"
               />
               <p className="footer-brand-desc">
-                Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut
-                Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam, Quis
-                Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip Ex
-                Econsequat. Lorem Ipsum Dolor Sit Amet Consectetur.
+                Crafting worlds through words. Narrative Pen brings you engaging stories, 
+                deep character journeys, and thought-provoking literature that stays with 
+                you long after the final page is turned.
               </p>
               <div className="footer-social-wrap">
                 <a
-                  to="#facebook"
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noreferrer"
                   className="footer-social-circle"
                   aria-label="Facebook"
                 >
                   <i className="ri-facebook-fill"></i>
                 </a>
                 <a
-                  to="#twitter"
+                  href="https://x.com"
+                  target="_blank"
+                  rel="noreferrer"
                   className="footer-social-circle"
                   aria-label="Twitter"
                 >
                   <i className="ri-twitter-x-fill"></i>
                 </a>
                 <a
-                  to="#instagram"
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noreferrer"
                   className="footer-social-circle"
                   aria-label="Instagram"
                 >
                   <i className="ri-instagram-line"></i>
                 </a>
                 <a
-                  to="#linkedin"
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noreferrer"
                   className="footer-social-circle"
                   aria-label="LinkedIn"
                 >
@@ -91,7 +96,7 @@ const Footer = () => {
 
           {/* Col 2: Navigation Links */}
           <Col sm={6} md={6} lg={3}>
-            <h4 className="footer-column-title">Lorem ipsum</h4>
+            <h4 className="footer-column-title">Quick Links</h4>
             <ul className="footer-links-list">
               <li>
                 <Link to="/" className="footer-link-item">
@@ -99,7 +104,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/about-the-book" className="footer-link-item">
+                <Link to="/about-the-book" className="footer-link-item"> 
                   About Book
                 </Link>
               </li>
@@ -109,7 +114,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="footer-link-item">
+                <Link to="/contact-us" className="footer-link-item">
                   Contact Us
                 </Link>
               </li>
@@ -118,19 +123,23 @@ const Footer = () => {
 
           {/* Col 3: Direct Contact Information Parameters */}
           <Col sm={6} md={6} lg={3}>
-            <h4 className="footer-column-title">Lorem ipsum</h4>
+            <h4 className="footer-column-title">Get In Touch</h4>
             <div className="footer-contact-list">
               <div className="footer-contact-row">
                 <div className="footer-contact-icon">
                   <i className="ri-phone-fill"></i>
                 </div>
-                <span>00000000000</span>
+                <a href="tel:+15551234567" className="footer-contact-link">
+                  +1 (555) 123-4567
+                </a>
               </div>
               <div className="footer-contact-row">
                 <div className="footer-contact-icon">
                   <i className="ri-mail-fill"></i>
                 </div>
-                <span>example@gmail.com</span>
+                <a href="mailto:info@narrativepen.com" className="footer-contact-link">
+                  info@narrativepen.com
+                </a>
               </div>
             </div>
           </Col>
@@ -141,14 +150,13 @@ const Footer = () => {
 
         <div className="footer-divider"></div>
 
-        {/* Bottom Horizontal Copyright Strip */}
+        {/* Bottom Horizontal Copyright Strip */} 
         <Row>
           <Col md={12}>
             <div className="footer-copyright">
               <i className="ri-copyright-line"></i>
               <span>
-                2026. Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                Nulla facilisi.
+                2026 Narrative Pen. All rights reserved. Built with passion for readers everywhere.
               </span>
             </div>
           </Col>

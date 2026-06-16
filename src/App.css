@@ -1114,4 +1114,4 @@ body:has(.thank-you-hero) header {
 }
 .thank-you-p{
   color: white;
-}
+}.footer-contact-row a {color: var(--text-muted);}
