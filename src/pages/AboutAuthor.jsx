@@ -20,17 +20,15 @@ const AboutAuthor = ({handleShow}) => {
         heroheading={
           <>
             <h1>
-              Lorem ipsum <span>dolor sit</span> amet, consectetur adipiscing
-              elit
-            </h1>
+              About The Author <span>Victor Sage</span></h1>
           </>
         }
-        Herodisc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"
+        Herodisc="Victor Sage is a novelist whose books combine romance and suspense together with richly textured emotions. His work is known for well-developed characters, the theme of resilience, and the power of human relationships, which can change one's life."
         RightBox={<img src={AuthorHeroimg} alt="" />}
       />
       <Sec01
-        sec01Heading="Lorem ipsum"
-        sec01dsc="Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam feugiat, metus nec malesuada aliquet, velit nulla luctus nisi, at dignissim elit magna vel nisi. Proin et sapien vel orci consequat consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec sit amet augue eget justo tincidunt ultricies. Aliquam erat volutpat. Sed tristique ligula id odio dictum, nec fermentum purus consequat"
+        sec01Heading="Debut Novel – A Night in Paris"
+        sec01dsc="His debut novel, A Night in Paris, reflects his storytelling philosophy. It is a romantic suspense story that contains elements of elegance, mystery, and emotion. This novel delves into such themes as love, tragedy, ambition, and redemption, set against the backdrop of Paris."
         counter={
           <Counter
             countnumber1="02"

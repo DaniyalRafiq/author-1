@@ -47,9 +47,7 @@ const Footer = () => {
                 className="footer-logo-img"
               />
               <p className="footer-brand-desc">
-                Crafting worlds through words. Narrative Pen brings you engaging stories, 
-                deep character journeys, and thought-provoking literature that stays with 
-                you long after the final page is turned.
+                Beyond being a romance and suspense novel, A Night in Paris is much more about resilience, trust, and change. Victor Sage takes his readers on a fascinating exploration of the world of love, danger, and Parisian elegance. The novel offers multi-faceted characters, sincere feelings, and a story that strikes a perfect balance between intimacy and suspense.
               </p>
               <div className="footer-social-wrap">
                 <a

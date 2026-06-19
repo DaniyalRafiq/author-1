@@ -7,39 +7,39 @@ import { motion, AnimatePresence } from "framer-motion";
 const faqData = [
   {
     id: 1,
-    question: "Lorem ipsum dolor sit amet",
+    question: "What is the plot of A Night in Paris?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "It is a romantic suspense novel that takes place in elegant and mysterious Paris. It tells a story of Tony – a talented fashion designer whose life is burdened by painful memories and Alice Rose – an intelligent and determined woman who has her own secret. Gradually, their accidental meeting turns into an adventure of love, betrayal, and passion, full of danger and thrill.",
   },
   {
     id: 2,
-    question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+    question: "What are the major characters?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "This is a story of Tony – a brilliant and tortured designer, and Alice Rose – a clever and perceptive lady who was raised in discipline and resilience. Both of them have deep wounds caused by their painful experiences in the past, and their relationship will be checked for passion, revelation, and growing conflicts.",
   },
   {
     id: 3,
-    question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+    question: "What are the main themes?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "In his book, Victor Sage combines such ideas as love and loss, ambition and redemption, trust and faith. The author touches on the themes of healing and sacrifice, identity and the power of human connection. As a result, he proves that sometimes the greatest risk people take is not in war, but in love.",
   },
   {
     id: 4,
-    question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+    question: "Which genre does A Night in Paris belong to?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "It is a unique mixture of romance, mystery, and suspense with elements of espionage and emotional redemption. This novel gives readers a chance to enjoy a thriller in a romantic environment and to feel the real danger.",
   },
   {
     id: 5,
-    question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+    question: "Why does Paris play such a crucial role in the story?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Paris is not just a setting of the novel, but the live character that adds additional depth to the story. The elegance of the fashion show runways and the darkness of the Parisian streets create a specific atmosphere of romance and suspense of this novel.",
   },
   {
     id: 6,
-    question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+    question: "Who inspired you to write this book?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Victor Sage dedicates A Night in Paris to his wife, Polly, and daughter, Trinity. Their love and support gave rise to the creation of this novel.",
   },
 ];
 
@@ -88,12 +88,10 @@ const FAQAccordion = () => {
             >
               <motion.span variants={itemVariants} className="faq-sub-heading">FAQ</motion.span>
               <motion.h2 variants={itemVariants} className="faq-main-heading">
-                Lorem Ipsum <br /> Dolor Sit
+                Frequently Asked Questions
               </motion.h2>
               <motion.p variants={itemVariants} className="faq-description">
-                Suspendisse potenti. Vestibulum ante ipsum primis in faucibus
-                orci luctus et ultrices posuere cubilia curae; Etiam feugiat,
-                metus.
+                Below is a list of six frequently asked questions regarding A Night in Paris by Victor Sage, formulated based on the information you provided and transformed into website-friendly content:
               </motion.p>
               <motion.div variants={itemVariants} className="btn-main">
                 <Btn

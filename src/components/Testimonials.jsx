@@ -20,43 +20,35 @@ import { motion } from "framer-motion";
 const testimonialsData = [
   {
     id: 1,
-    name: "KYLE MERWIN",
-    role: "CO-owner",
+    name: "Emily Roberts",
+    // role: "CO-owner",
     image: testiProfile1,
     quote:
-      "Aut nihil mollitia deserunt quia sed rem. Quibusdam amet veniam rerum id rerum beatae. Quas rerum iste necessitatibus. At voluptates ad magnam blanditiis excepturi expedita aut. Aut repellat inventore qui minima illum est.",
+      "Paris is brought to life in such an elegant manner by Victor Sage that the city becomes real on every single page. The journey of Tony and Alice is very romantic and at the same time filled with suspense, and I just couldn’t wait to see the outcome of all their efforts.",
   },
   {
     id: 2,
-    name: "KYLE MERWIN",
-    role: "CO-owner",
+    name: "Daniel Ahmed ",
+    // role: "CO-owner",
     image: testiProfile2,
     quote:
-      "Aut nihil mollitia deserunt quia sed rem. Quibusdam amet veniam rerum id rerum beatae. Quas rerum iste necessitatibus. At voluptates ad magnam blanditiis excepturi expedita aut. Aut repellat inventore qui minima illum est.",
+      "The thing that impressed me most in this book is the emotional truthfulness. It is not just a love story; it is a very complex story because the characters have their own dark past, which makes their love very strong and unique. The suspense is fascinating, and the depth of their relationship leaves you breathless.",
   },
   {
     id: 3,
-    name: "KYLE MERWIN",
-    role: "CO-owner",
+    name: "Claire Thompson",
+    // role: "CO-owner",
     image: testiProfile3,
     quote:
-      "Aut nihil mollitia deserunt quia sed rem. Quibusdam amet veniam rerum id rerum beatae. Quas rerum iste necessitatibus. At voluptates ad magnam blanditiis excepturi expedita aut. Aut repellat inventore qui minima illum est.",
+      "It is not just a love story; it is a story of overcoming many challenges, and the transformation of the characters. Victor Sage included such important themes as love, trust, sacrifices, and redemption into the plot, which makes this novel very engaging and captivating.",
   },
   {
     id: 4,
-    name: "KYLE MERWIN",
-    role: "CO-owner",
+    name: "Hassan Raza",
+    // role: "CO-owner",
     image: testiProfile4,
     quote:
-      "Aut nihil mollitia deserunt quia sed rem. Quibusdam amet veniam rerum id rerum beatae. Quas rerum iste necessitatibus. At voluptates ad magnam blanditiis excepturi expedita aut. Aut repellat inventore qui minima illum est.",
-  },
-  {
-    id: 5,
-    name: "KYLE MERWIN",
-    role: "CO-owner",
-    image: testiProfile5,
-    quote:
-      "Aut nihil mollitia deserunt quia sed rem. Quibusdam amet veniam rerum id rerum beatae. Quas rerum iste necessitatibus. At voluptates ad magnam blanditiis excepturi expedita aut. Aut repellat inventore qui minima illum est.",
+      "A Night in Paris is an enchanting story of love and adventure. Even though there are some elements of espionage and crime, what really makes this novel so captivating is the emotional depth. Victor Sage managed to show that the biggest dangers people face in their lives are related to love.",
   },
 ];
 
@@ -109,13 +101,10 @@ const Testimonials = () => {
             Our Client
           </motion.span>
           <motion.h2 variants={headerItemVariants} className="testimonials-title">
-            Lorem Ipsum
+            Testimonials
           </motion.h2>
           <motion.p variants={headerItemVariants} className="testimonials-lead mx-auto">
-            Tristique Morbi Pulvinar Euismod Fringilla Blandit Proin Auctor
-            Dignissim Quis Vitae <br />
-            Ac Augue Suspendisse Vitae Non Turpis Vitae Senectus Neque
-            Tristique.
+            Here is what the readers think about this book, A Night In Paris, and its author Victor Sage.
           </motion.p>
         </motion.div>
 
@@ -173,9 +162,9 @@ const Testimonials = () => {
                     <p className="testimonial-quote-text">{item.quote}</p>
                     <div className="testimonial-meta">
                       <h4 className="testimonial-client-name">{item.name}</h4>
-                      <span className="testimonial-client-role">
+                      {/* <span className="testimonial-client-role">
                         {item.role}
-                      </span>
+                      </span> */}
                     </div>
                   </div>
                 </div>

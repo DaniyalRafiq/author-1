@@ -542,7 +542,10 @@ section.sec-01 .row {
   opacity: 0.9;
   pointer-events: none;
 }
-
+.ri-double-quotes-r:before {
+    content: "\ec52";
+    color: #ff7c7c;
+}
 /* ==========================================================================
    2. Typography Layout Settings
    ========================================================================== */
