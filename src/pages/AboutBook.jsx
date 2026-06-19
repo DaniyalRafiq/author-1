@@ -19,19 +19,17 @@ const AboutBook = ({ handleShow }) => {
         handleShow={handleShow}
         heroheading={
           <>
-            {" "}
             <h1>
-              Home ipsum <span>dolor sit</span> amet, consectetur adipiscing
-              elit
-            </h1>{" "}
+              About the Book – A Night in Paris <span> By Victor Sage</span>
+            </h1>
           </>
         }
-        Herodisc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"
+        Herodisc="Against the backdrop of the beautiful city of Paris, A Night in Paris is a romantic suspense book that delves into trust, vulnerability, and metamorphosis. In the book, we follow Tony, who is a very talented fashion designer with a traumatic past, and Alice Rose, a resilient woman who has a number of secrets to keep. What starts off as an unusual connection takes a romantic journey full of surprises and risks for both of the characters."
         RightBox={<img src={bookHeroimg} alt="" />}
       />
       <Sec01
-        sec01Heading="Lorem ipsum"
-        sec01dsc="Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam feugiat, metus nec malesuada aliquet, velit nulla luctus nisi, at dignissim elit magna vel nisi. Proin et sapien vel orci consequat consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec sit amet augue eget justo tincidunt ultricies. Aliquam erat volutpat. Sed tristique ligula id odio dictum, nec fermentum purus consequat"
+        sec01Heading="Characters of A Night In Paris - Tony & Alice"
+        sec01dsc="Tony is a talented designer with scars of his painful past on his mind. The character is ambitious, seeking redemption and finding his way to trust. Alice Rose is an intelligent, perceptive woman who represents resilience and discipline and has some dark secrets about herself. Their relationship is passionate but fragile and prone to revelations and conflicts."
         img={sec02_img}
       />
       <Testimonials />

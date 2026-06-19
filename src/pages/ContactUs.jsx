@@ -13,12 +13,11 @@ const ContactUs = ({handleShow}) => {
         heroheading={
           <>
             <h1>
-              Lorem ipsum <span>dolor sit</span> amet, consectetur adipiscing
-              elit
+              Stay in Touch with <span>Victor Sage</span>
             </h1>
           </>
         }
-        Herodisc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"
+        Herodisc="Each and every tale is a dialogue, and Victor Sage appreciates the perspectives of his audience. If you have been inspired by the love and mystery in the book called A Night in Paris, if you would like to express your views on the journey of Tony and Alice, if you simply want to get in touch with the writer, your opinion counts. Contact Victor Sage to talk about his literature, his future projects, or his inspirations in general."
         RightBox={<Form />}
       />
       <FAQAccordion />

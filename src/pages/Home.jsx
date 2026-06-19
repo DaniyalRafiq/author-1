@@ -21,18 +21,17 @@ const Home = ({ handleShow }) => {
         heroheading={
           <>
             <h1>
-              Lorem ipsum <span>dolor sit</span> amet, consectetur adipiscing
-              elit
+              About the Book – A Night in Paris <span>By Victor Sage</span> 
             </h1>
           </>
         }
-        Herodisc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"
+        Herodisc="Against the backdrop of the beautiful city of Paris, A Night in Paris is a romantic suspense book that delves into trust, vulnerability, and metamorphosis. In the book, we follow Tony, who is a very talented fashion designer with a traumatic past, and Alice Rose, a resilient woman who has a number of secrets to keep. What starts off as an unusual connection takes a romantic journey full of surprises and risks for both of the characters."
         RightBox={<img src={Heroimg} alt="" />}
       />
 
       <Sec01
-        sec01Heading="Lorem ipsum"
-        sec01dsc="Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam feugiat, metus nec malesuada aliquet, velit nulla luctus nisi, at dignissim elit magna vel nisi. Proin et sapien vel orci consequat consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec sit amet augue eget justo tincidunt ultricies. Aliquam erat volutpat. Sed tristique ligula id odio dictum, nec fermentum purus consequat"
+        sec01Heading="About The Writer Victor Sage"
+        sec01dsc="Victor Sage is a novelist whose books combine romance and suspense together with richly textured emotions. His work is known for well-developed characters, the theme of resilience, and the power of human relationships, which can change one's life."
         counter={
           <Counter
             countnumber1="02"
@@ -47,8 +46,8 @@ const Home = ({ handleShow }) => {
       />
       <Testimonials />
       <Sec01
-        sec01Heading="Lorem ipsum"
-        sec01dsc="Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam feugiat, metus nec malesuada aliquet, velit nulla luctus nisi, at dignissim elit magna vel nisi. Proin et sapien vel orci consequat consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec sit amet augue eget justo tincidunt ultricies. Aliquam erat volutpat. Sed tristique ligula id odio dictum, nec fermentum purus consequat"
+        sec01Heading="Writing Philosophy"
+        sec01dsc="Victor Sage perceives writing not just as entertainment but as a reflection of our experiences. Love, faith, and change constitute the battlefield of life according to him, and all this is manifested through his works. With every book that he writes, he seeks to touch the emotions of the reader in such a way that the reader finds himself/herself in the character."
         img={sec02_img}
       />
       <FAQAccordion />
